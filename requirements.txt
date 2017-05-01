@@ -1,0 +1,6 @@
+django
+django-storages
+azure
+pillow
+pymysql
+
