@@ -17,9 +17,14 @@ from django.conf import settings
 from django.conf.urls import url
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.http import HttpResponse
+
+def root(request):
+    return HttpResponse('Hello, Azure WebApp on Windows.')
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', root, name='root'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
