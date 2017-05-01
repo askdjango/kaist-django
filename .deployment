@@ -1,0 +1,2 @@
+[config]
+command = d:\python34\python deploy.py

@@ -1,6 +1,6 @@
-django
+django<1.11
 django-storages
 azure
-pillow
 pymysql
+pillow
 
